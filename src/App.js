@@ -12,15 +12,20 @@ class App extends Component {
       <Router>
         <div className="App">
           <header className="App-header">
+            Things Jason Likes
+            <h3>Created by Daniel</h3>
             <Nav />
           </header>
           <section>
+          </section>
+            {/* Beginning of connected links */}
             <Switch>
               <Route path="/" exact component={CategoryList} />
               <Route path="/:category" exact component={PhotoList} />
-              {/* <Route path="/photo-list/:id" exact component={PhotoDetails} /> */}
+              {/* <Route path="/photo-list/[0]" exact component={PhotoDetails} /> */}
             </Switch>
-          </section>
+            {/* End of connected links, beginning of content */}
+          <CategoryList />
         </div>
       </Router>
     );

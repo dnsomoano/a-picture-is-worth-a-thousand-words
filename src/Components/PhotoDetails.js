@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import data from "./data.json";
+import CategoryList from './CategoryList';
 
 class PhotoDetails extends Component {
     constructor(props) {
@@ -18,12 +19,12 @@ class PhotoDetails extends Component {
     }
 
     render() {
-        console.log(this.props.match);
+        // console.log(eachPhoto);
         return (
-            <div>
-                <h1>{this.state.photo.id}</h1>
-                <img src={this.state.photo.}
-            </div>
+            // <div>
+            //     <h1>{eachPhoto}</h1>
+            //     <img src={this.state.photo.}
+            // </div>
         );
     }
 }

@@ -14,28 +14,46 @@ class PhotoList extends Component {
     console.log(data);
     console.log(data["pandas"].photos[0].title);
     this.setState({
-      list: Object.keys(data)
+      list: data
     });
+    console.log(typeof this.state.list);
   }
 
   render() {
     return (
-      <div>
-        <ul>
-          {this.state.list.map((category) => {
-            console.log(category);
-            return (
-              <li key={i}>
-                <Link to={"/photo-list/"}>
-                  {category.title}
-                  {category.description}
-                  {category.photos}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+      <section className="body">
+        <section className="photo-detail">
+          <header>Panda Waving</header>
+          <a href="/:category"><img
+            src="https://cdn-images-1.medium.com/max/1600/1*i1vVm3EqqDIkyucD0079wg.jpeg"
+            alt="PandaWaving"
+          /></a>
+        </section>
+        <section className="photo-detail">
+          <header>Großer Panda im Ocean Park, Hongkong</header>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/2560px-Grosser_Panda.JPG"
+            alt="GroberPanda"
+          />
+        </section>
+      </section>
+      // <div>
+      //   <ul>
+      //     {Object.keys(this.state.list).map((category, i) => {
+      //       console.log(category);
+      //       console.log(typeof this.state.list[category]);
+      //       return (
+      //         <section key={i}>
+      //           <Link to={"/" + category}>
+      //             <header>{this.state.list[category].title}</header>
+      //             <p>{this.state.list[category].description}</p>
+      //             {/* {this.state.list[category].photos} */}
+      //           </Link>
+      //         </section>
+      //       );
+      //     })}
+      //   </ul>
+      // </div>
     );
   }
 }
