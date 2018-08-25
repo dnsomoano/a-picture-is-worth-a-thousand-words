@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Link } from "react-router-dom";
-import data from "./data.json";
+import data from '../Data/hobbies.json'
 
 class PhotoList extends Component {
   constructor(props) {

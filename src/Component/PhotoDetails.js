@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import data from "./data.json";
-import CategoryList from './CategoryList';
+import CategoryList from '.Component/CategoryList';
 
 class PhotoDetails extends Component {
     constructor(props) {

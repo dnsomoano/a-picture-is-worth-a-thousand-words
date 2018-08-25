@@ -22,7 +22,22 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.body {
+  display: flex;
+}
+
+.image-preview {
+  margin: 1em;
+  border: 1px grey solid;
+  padding: 1em;
+}
+
+.image-preview>header {
+  font-size: 2em;
 }

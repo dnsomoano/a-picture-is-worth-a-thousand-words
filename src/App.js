@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Nav from "./Components/Nav";
-import CategoryList from "./Components/CategoryList";
-import PhotoList from "./Components/PhotoList";
+import Nav from "./Component/Nav";
+import CategoryList from "./Component/CategoryList";
+import PhotoList from "./Component/PhotoList";
 // import PhotoDetails from "./Components/PhotoDetails";
 
 class App extends Component {
