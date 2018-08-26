@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
 import Nav from "./Component/Nav";
 import CategoryList from "./Component/CategoryList";
 import PhotoList from "./Component/PhotoList";
-// import PhotoDetails from "./Components/PhotoDetails";
+import PhotoDetail from "./Component/PhotoDetail";
+// WORKING ON
 
 class App extends Component {
   render() {
@@ -20,10 +21,9 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={CategoryList} />
             <Route path="/:category" exact component={PhotoList} />
-            {/* <Route path="/photo-list/[0]" exact component={PhotoDetails} /> */}
+            <Route path="/:category/:index" exact component={PhotoDetail} />
           </Switch>
           {/* End of connected links, beginning of content */}
-          <CategoryList />
         </div>
       </Router>
     );

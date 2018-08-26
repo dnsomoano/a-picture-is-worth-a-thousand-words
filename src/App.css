@@ -2,11 +2,7 @@
   text-align: justify;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
+/* Selectors for header on App.js */
 .App-header {
   background-color: #222;
   height: 150px;
@@ -14,14 +10,20 @@
   color: white;
 }
 
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
 /* .App-title {
   font-size: 1.5em;
 } */
 
-.App-intro {
+/* .App-intro {
   font-size: large;
-}
+} */
 
+/* Selectors for CategoryList */
 img {
   display: block;
   height: auto;

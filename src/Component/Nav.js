@@ -10,7 +10,11 @@ class Nav extends Component {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/photo-list">Photos</Link>
+            {/* TODO link dynamically to category user is currently within */}
+            <Link to="/pandas">Pandas</Link>
+          </li>
+          <li>
+            <Link to="/miniatures">Miniatures</Link>
           </li>
         </ul>
       </nav>
